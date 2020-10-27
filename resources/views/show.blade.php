@@ -6,6 +6,6 @@
     <title>PAGES</title>
 </head>
 <body>
-    <h1>All Pages</h1>
+    <h1>PAGE: {{ $id }}</h1>
 </body>
 </html>

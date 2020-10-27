@@ -26,10 +26,4 @@ Route::get('/hello/id',function() {
     return 'Hello ID';
 });
 
-Route::get('/page/{id?}',function ($id='default'){
-    return 'This is Page: ' . $id;
-});
-
-Route::get('/news/{id?}',function ($id=null) {
-    return 'This is News: '. $id;
-});
+Route::get('/pages' , [PagesController::class,'index']);

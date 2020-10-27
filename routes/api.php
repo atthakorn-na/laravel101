@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/name',function(){
+    return[
+        'name'=> 'Atthakorn natung',
+        'id'=>'6110400858'
+    ];
+});
